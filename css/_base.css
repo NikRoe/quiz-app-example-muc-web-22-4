@@ -44,6 +44,7 @@ p {
 body {
   line-height: 1.5;
   font-size: 1.25rem; /* var(--fs-400) */
+  background-color: var(--primary);
 }
 
 img {
