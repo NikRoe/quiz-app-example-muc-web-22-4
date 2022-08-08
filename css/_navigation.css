@@ -1,5 +1,11 @@
 .navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: var(--primary);
+  height: 3rem;
+}
+
+.navigation__item {
+  height: 100%;
+  width: 33%;
 }

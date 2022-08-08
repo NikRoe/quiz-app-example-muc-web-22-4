@@ -12,28 +12,32 @@
     <main>
       <article class="question-article">
         <h2>Question</h2>
-
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-          role="img"
-          width="1em"
-          height="1em"
-          preserveAspectRatio="xMidYMid meet"
-          viewBox="0 0 1200 1200"
-          class="question__svg"
-        >
-          <path d="M234.375 0v1200L600 834.375L965.625 1200V0h-731.25z" />
-        </svg>
-
+        <button type="button" class="question__bookmark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="img"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1200 1200"
+            data-js="question-bookmark"
+            class="question__svg"
+          >
+            <path
+              color="currentColor"
+              d="M234.375 0v1200L600 834.375L965.625 1200V0h-731.25z"
+            />
+          </svg>
+        </button>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           maxime natus molestias, earum fugit expedita sint nihil alias tempore
           pariatur accusamus quisquam distinctio culpa possimus repudiandae
           asperiores delectus illo. Maiores?
         </p>
-        <button type="button" class="question__button">Show answer</button>
-        <p class="hidden">
+        <button type="button" class="question__button" data-js="answer-button">
+          Show answer
+        </button>
+        <p class="hidden" data-js="answer-text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque ipsum
           fuga laboriosam doloribus quis cumque iusto, consequuntur a. Error eos
           consequatur eveniet, natus harum ipsum repellat. Ad reprehenderit
@@ -46,10 +50,22 @@
         </ul>
       </article>
     </main>
-    <!-- <nav class="navigation">
+    <nav class="navigation">
       <a href="/"><img src="" alt="home" /></a
-      ><a href="/bookmarks.html"><img src="" alt="bookmarks" /></a
+      ><a href="/bookmarks.html"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 1200 1200"
+          class="navigation__item"
+        >
+          <path
+            d="M234.375 0v1200L600 834.375L965.625 1200V0h-731.25z"
+          /></svg></a
       ><a href="/profile.html"><img src="" alt="profile" /></a>
-    </nav> -->
+    </nav>
   </body>
+  <script defer src="./script.js" type="module"></script>
 </html>

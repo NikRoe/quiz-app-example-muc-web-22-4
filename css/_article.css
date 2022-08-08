@@ -1,6 +1,6 @@
 .question-article {
   background-color: var(--secondary);
-  border: white 0.2rem solid;
+  border: var(--white) 0.2rem solid;
   padding: 1rem;
   text-align: center;
   margin: 0 1rem;
@@ -8,18 +8,24 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 2rem;
   align-items: center;
-  min-height: 600px;
+}
+
+.question__bookmark {
+  position: absolute;
+  top: -0.75rem;
+  right: 0.25rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .question__svg {
   fill: currentColor;
-  position: absolute;
-  top: -0.75rem;
-  right: 0.25rem;
   width: 1.5rem;
   height: 1.5rem;
+  cursor: pointer;
 }
 
 .question__svg-active {
