@@ -1,11 +1,31 @@
 .navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  border: var(--black) 1px solid;
   background-color: var(--primary);
   height: 3rem;
+}
+.navigation__button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+.navigation__button:hover {
+  cursor: pointer;
 }
 
 .navigation__item {
   height: 100%;
-  width: 33%;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.navigation__item--active {
+  background-color: chocolate;
 }
